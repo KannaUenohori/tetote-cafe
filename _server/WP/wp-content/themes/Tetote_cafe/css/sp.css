@@ -1,0 +1,794 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------------------------
+  reset
+------------------------------------------------------------------------------*/
+
+body {
+  font-size: 14px;
+  position: relative;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+}
+
+body.is-open {
+  overflow: hidden;
+}
+
+.outer-block {
+  min-width: 320px;
+}
+
+.inner-block {
+  padding: 0 28px;
+  width: auto;
+}
+
+#wrapper {
+  min-width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type="submit"] {
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px !important;
+}
+
+/*------------------------------------------------------------------------------
+  css
+------------------------------------------------------------------------------*/
+
+.pc {
+  display: none !important;
+}
+
+.sp {
+  display: block;
+}
+
+/*------------------------------------------------------------------------------
+  common
+------------------------------------------------------------------------------*/
+
+/*-------------------------
+  c-title
+---------------------------*/
+@media screen and (max-width: 768px) {
+  .c-title .en {
+    font-size: 24px;
+    font-family: lato;
+  }
+
+  .c-title .jp {
+    font-size: 14px;
+    padding-bottom: 13px;
+  }
+
+  .c-title {
+    padding: 50px 0 30px 0;
+  }
+
+
+  .subpage .c-title {
+    padding-top: 16px;
+  }
+
+  .subpage .en {
+    font-size: 32px;
+  }
+
+  .subpage .jp {
+    font-size: 14px;
+  }
+}
+
+
+/*-------------------------
+  c-button
+---------------------------*/
+@media screen and (max-width: 768px) {
+  .c-button {
+    font-size: 15px;
+    font-family: lato;
+    height: 40px;
+    border-radius: 40px;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-block {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .button-block a {
+    font-size: 14px;
+  }
+
+  .menu-block .brown-button {
+    width: 170px;
+    height: 40px;
+  }
+}
+
+/*---------------------------------------------------------------------
+  header
+---------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .is-open .nav-close {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header .nav-close {
+    opacity: 0;
+    pointer-events: none;
+    background-color: #28252c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 120px 30px;
+    overflow: scroll;
+    transition: opacity 0.3s linear;
+    z-index: 100;
+  }
+
+  .cross {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 28px;
+    right: 32px;
+  }
+
+  .nav-list li+li {
+    padding-top: 40px;
+  }
+
+  header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 24px;
+  }
+
+  .nav-open {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-bar {
+    width: 48px;
+    background: #fff;
+    border-radius: 25px;
+    padding: 8px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  header .nav-list a {
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cross {
+    display: none;
+  }
+
+  .sp {
+    display: none;
+  }
+}
+
+/*---------------------------------------------------------------------
+  home
+---------------------------------------------------------------------*/
+/*-------------------------
+  mv
+---------------------------*/
+@media screen and (max-width: 1350px) {
+  .concept-img img {
+    display: flex;
+    align-items: center;
+  }
+
+  .mv-block .sub-title {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mv-block {
+    padding: 80px 0;
+  }
+  
+  .spheader-mv {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .pcheader-mv {
+    display: none;
+  }
+
+  .concept-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .concept .title {
+    font-size: 14px;
+  }
+
+  .mv-block .main-title {
+    font-size: 24px;
+    left: 0;
+    padding: 25px 0 40px 0;
+  }
+
+  .mv-block .sub-title {
+    font-family: dnp-shuei-mgothic-std;
+    font-weight: 300;
+    line-height: 2.2;
+    font-size: 14px;
+    padding-bottom: 24px;
+    letter-spacing: 0;
+  }
+
+  .pcbr {
+    display: none;
+  }
+
+  .pc-concept {
+    display: none !important;
+  }
+}
+
+
+
+/*-------------------------
+  news
+---------------------------*/
+
+@media screen and (max-width: 1070px) {
+
+  .news-block .news-article {
+    padding-bottom: 40px;
+  }
+
+  .news-article .article-img {
+    width: 330px;
+    margin: 0 auto;
+  }
+
+  .news-article .article {
+    width: 330px;
+    padding: 24px 18px;
+    margin: 0 auto;
+  }
+
+
+  .news-slick {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .news-article .article-img {
+    width: 100%;
+  }
+
+  .news-article .article {
+    width: 100%;
+  }
+}
+
+
+/*-------------------------
+  menu
+---------------------------*/
+
+@media screen and (max-width: 768px) {
+  .menu-img {
+    text-align: center;
+  }
+
+  .menu-img img {
+    width: 260px;
+  }
+
+  .menu-content .title {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 8px 0 0 0;
+  }
+
+  .menu-content .text {
+    font-size: 14px;
+    line-height: 1.5;
+    inline-size: 240px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+/*-------------------------
+  shop
+---------------------------*/
+
+
+@media screen and (max-width: 887px) {
+  .shop-name p{
+    font-size: 24px;
+  }
+
+  .info-wrap .title span {
+    font-size: 13px;
+  }
+
+  .info-wrap {
+    padding-bottom: 40px;
+  }
+
+  .info-wrap .info {
+    margin-bottom: 40px;
+  }
+
+  .info-wrap .title p {
+    font-size: 13px;
+  }
+
+  .info-wrap li+li {
+    margin-top: 24px;
+  }
+
+  .info-wrap .title p {
+    padding-top: 4px;
+  }
+
+  .info-wrap .map {
+    width: 300px;
+    height: 240px;
+    margin: 0 auto;
+  }
+}
+
+/*-------------------------
+  footer
+---------------------------*/
+@media screen and (max-width: 935px) {
+  .footer-block .nav-wrap {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .footer-right .nav-list {
+    display: grid;
+  }
+
+  .footer-right li {
+    font-size: 14px;
+  }
+
+  footer .nav-list {
+    margin-bottom: 40px;
+  }
+
+  .footer-left {
+    order: 2;
+  }
+
+  .footer-right {
+    order: 1;
+  }
+
+  footer .nav-list li {
+    padding: 16px;
+  }
+
+  footer .footer-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  footer .copy-right {
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 24px;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------
+  下層ページ＿News
+---------------------------------------------------------------------*/
+
+@media screen and (max-width: 935px) {
+  .news .news-article .article-img {
+    width: 280px;
+  }
+
+  .news .news-article .article {
+    background-color: #FBF8F8;
+    color: #b1b39b;
+    width: 280px;
+    height: 72px;
+    padding: 8px 16px;
+    position: relative;
+  }
+
+  .news .article .date {
+    font-size: 12px;
+  }
+
+  .news .article .title {
+    font-size: 16px;
+    padding: 4px 0;
+  }
+
+  .news .arrow {
+    width: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .news .news-article {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+
+
+
+/*---------------------------------------------------------------------------
+  下層共通　breadcrumb
+---------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+  .breadcrumb-block li+li::before {
+    content: ">";
+    padding: 0 8px;
+  }
+
+  .breadcrumb-list {
+    font-size: 12px;
+    padding-top: 80px;
+    display: flex;
+  }
+
+}
+
+
+/*-------------------------
+  paging_area
+---------------------------*/
+
+@media screen and (max-width: 935px) {
+  .news .page-area {
+    padding-bottom: 80px;
+  }
+
+  .news .page-area .current {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    color: #FFF;
+    margin: 0 8px;
+  }
+
+  .page-numbers {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: lato;
+  }
+
+  .news .page-area a {
+    margin: 0 8px;
+  }
+
+  .news .prev {
+    margin-right: 24px;
+    border: none;
+  }
+
+  .news .next {
+    margin-left: 24px;
+    border: none;
+  }
+
+  .news .page-area img {
+    width: 16px;
+  }
+
+}
+
+
+
+/*---------------------------------------------------------------------
+  下層ページ＿News_single
+---------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 768px) {
+
+
+  .news-single .news-article {
+    padding: 32px;
+    margin: 32px 0;
+    border-radius: 50px;
+  }
+
+  .shadow-none {
+    box-shadow: none !important;
+  }
+
+  .news-single img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .news-single .date {
+    font-size: 12px;
+  }
+
+  .news-single p {
+    font-size: 14px;
+  }
+
+  .news-single .title {
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------
+  下層ページ＿menu
+---------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+  .menu .inner-block {
+    padding-bottom: 64px;
+  }
+
+
+  .menu .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .menu table {
+    width: 100%;
+  }
+
+  .menu tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu td {
+    padding-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .bread {
+    width: 200px;
+  }
+
+  .cake {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .coffee {
+    width: 80px;
+    object-fit: contain;
+  }
+
+  .smoothie {
+    width: 200px;
+  }
+
+  .drink {
+    margin-top: 80px;
+  }
+
+  .menu-image {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+}
+
+
+/*---------------------------------------------------------------------
+  下層ページ＿shopinfo
+---------------------------------------------------------------------*/
+@media screen and (max-width: 887px) {
+
+  .subpage .info-right .title::before {
+    content: url('../image/home/info-diamond.svg');
+    width: 16px;
+    position: absolute;
+    left: 28px;
+    transform: translateY(-2px);
+  }
+
+  .subpage .info-right {
+    margin-top: 24px;
+  }
+
+  .info-map {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .subpage .shop {
+    padding-bottom: 60px;
+  }
+
+  .subpage .shop .info-wrap {
+    padding: 20px 0 40px;
+  }
+}
+
+
+/*---------------------------------------------------------------------
+  下層ページ＿contact
+---------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .contact .intro .text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .intro .tel span {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .intro .tel {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .intro .time {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin: 8px 0 8px;
+  }
+}
+
+/*-------------------------
+  contact-form
+---------------------------*/
+
+@media screen and (max-width: 768px) {
+  .contact-subpage {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-form input[type="text"] {
+    background-color: #f3f3f3;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 6px;
+  }
+
+  .contact-form li {
+    margin-bottom: 33px;
+  }
+
+
+  .contact-form textarea {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 4px;
+  }
+
+  .contact-form .required::after {
+    margin-left: 8px;
+  }
+
+  .contact-form .head {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*-------------------------
+  privacy-check
+---------------------------*/
+@media screen and (max-width: 768px) {
+  .privacy-check .text {
+    margin: 40px 0 16px;
+  }
+
+  .contact-button {
+    margin-top: 24px;
+  }
+
+}
+
+
+
+
+/*------------------------------------------------------------------------------
+  下層共通　Privacy-policy
+------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 768px) {
+  .privacy-policy .intro p {
+    font-size: 14px;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+
+
+}
+
+
+
+.midnightHeader.green a,
+.midnightHeader.green .instagram {
+  color: #FBF8F8;
+}
